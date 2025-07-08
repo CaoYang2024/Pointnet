@@ -2,7 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+# Ignore Hydra output directories
+outputs/
+multirun/
 # C extensions
 *.so
 # WandB local logs

@@ -1,3 +1,6 @@
-config:
-  name: "test"
-  purpose: "example"
+root_dir: D:/ModelNet10
+batch_size: 16
+lr: 0.0001
+epochs: 10
+save_model_path: results/ckpts
+project_name: pointnet-project

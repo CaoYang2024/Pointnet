@@ -1,3 +1,12 @@
-train:
-  seed : 42;
+# config/config.yaml
+random.seed: 42
+lr: 0.0001
+batch_size: 16
+epochs: 30
+save_model_path: results/ckpts
+root_dir: D:/ModelNet10
 
+wandb:
+  project: pointnet-project
+  name: run-${now:%Y-%m-%d_%H-%M-%S}
+  entity: "ximenshuiyang"
