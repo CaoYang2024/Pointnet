@@ -4,7 +4,7 @@ from pathlib import Path
 # Add the root of the project to PYTHONPATH
 project_root = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_root))
-
+import wandb
 import argparse
 import torch
 from src.models import model
@@ -14,6 +14,8 @@ from torchvision import transforms
 from torch.utils.data import DataLoader
 
 def test(model_path, root_dir, batch_size=32):
+
+    wandb.init()
     test_transforms = transforms.Compose([
         utils.PointSampler(1024),
         utils.Normalize(),

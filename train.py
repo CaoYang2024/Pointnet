@@ -5,7 +5,7 @@ from path import Path
 from src.models import model
 from src.pipelines import dataset
 from src.utils import utils
-from src.schemas.args import parse_args
+from src.pipelines.args import parse_args
 from torchvision import transforms
 from torch.utils.data import DataLoader
 

@@ -5,7 +5,11 @@ __pycache__/
 
 # C extensions
 *.so
-
+# WandB local logs
+wandb/
+**/wandb/
+wandb-debug.log
+wandb-summary.json
 # Distribution / packaging
 .Python
 build/
