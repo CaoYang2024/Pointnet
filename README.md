@@ -1,7 +1,7 @@
 
 ## 🗂️ Repository Structure
 ```bash
-.
+
 ├── config                    # Configuration files for your project
 │   └── config.yaml           # Example configuration file
 │                             # Multiple configs allow Hydra to compose configurations for running various experiments
